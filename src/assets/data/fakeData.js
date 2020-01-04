@@ -1,0 +1,131 @@
+//自己造的假数据
+//菜单栏
+const functionData = [
+  {
+    id: "1",
+    functionName: "首页",
+    description: "首页",
+    functionUrl: "/",
+    children: [{
+      id: "11",
+      functionName: "推荐",
+      description: "推荐",
+      functionUrl: "/recommend",
+      children: []
+    }, {
+      id: "12",
+      functionName: "前端",
+      description: "前端",
+      functionUrl: "/frontend",
+      children: [{
+        id: "121",
+        functionName: "HTML",
+        description: "HTML",
+        functionUrl: "/html",
+        children: []
+      }, {
+        id: "122",
+        functionName: "CSS",
+        description: "CSS",
+        functionUrl: "/css",
+        children: []
+      }, {
+        id: "123",
+        functionName: "VUE",
+        description: "VUE",
+        functionUrl: "/vue",
+        children: []
+      }, {
+        id: "124",
+        functionName: "node",
+        description: "node",
+        functionUrl: "/node",
+        children: []
+      },]
+    }, {
+      id: "13",
+      functionName: "后端",
+      description: "后端",
+      functionUrl: "/backend",
+      children: [{
+        id: "131",
+        functionName: "JAVA",
+        description: "JAVA",
+        functionUrl: "/java",
+        children: []
+      }, {
+        id: "132",
+        functionName: "Spring",
+        description: "Spring",
+        functionUrl: "/spring",
+        children: []
+      }, {
+        id: "133",
+        functionName: "netty",
+        description: "netty",
+        functionUrl: "/netty",
+        children: []
+      }, {
+        id: "134",
+        functionName: "oracle",
+        description: "oracle",
+        functionUrl: "/oracle",
+        children: []
+      },]
+    }, {
+      id: "14",
+      functionName: "IOS",
+      description: "IOS",
+      functionUrl: "/ios",
+      children: []
+    }, {
+      id: "15",
+      functionName: "人工智能",
+      description: "人工智能",
+      functionUrl: "/ai",
+      children: []
+    }, {
+      id: "16",
+      functionName: "开发工具",
+      description: "开发工具",
+      functionUrl: "/ide",
+      children: []
+    }, {
+      id: "17",
+      functionName: "代码人生",
+      description: "代码人生",
+      functionUrl: "/codeLife",
+      children: []
+    }, {
+      id: "18",
+      functionName: "阅读",
+      description: "阅读",
+      functionUrl: "/read",
+      children: []
+    }]
+  }, {
+    id: "2",
+    functionName: "沸点",
+    description: "沸点",
+    functionUrl: "/hot"
+  }, {
+    id: "3",
+    functionName: "话题",
+    description: "话题",
+    functionUrl: "/topic"
+  }, {
+    id: "4",
+    functionName: "小册",
+    description: "小册",
+    functionUrl: "/books"
+  }, {
+    id: "5",
+    functionName: "活动",
+    description: "活动",
+    functionUrl: "/activity"
+  }
+];
+
+export {
+  functionData
+}

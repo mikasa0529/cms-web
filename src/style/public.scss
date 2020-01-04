@@ -1,0 +1,16 @@
+@charset "UTF-8";
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #3c9afb;
+  background: #3c9afb;
+}
