@@ -1,5 +1,8 @@
 <template>
-<h1>TopicIndex</h1>
+  <div>
+    <h1>话题</h1>
+    <article-list></article-list>
+  </div>
 </template>
 
 <script>

@@ -6,9 +6,13 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import ElemengUi from 'element-ui'
+import ArticleList from "@/components/common/ArticleList";
+import {dateFormat} from '@/js/filter'
 import '@/style/public.scss'
 
 Vue.use(ElemengUi);
+Vue.component("ArticleList",ArticleList);
+Vue.filter("dateFormat",dateFormat);
 Vue.config.productionTip = false;
 Vue.prototype.$test = axios.create({
   baseURL: process.env.BASE_URL,

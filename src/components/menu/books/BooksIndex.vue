@@ -1,5 +1,8 @@
 <template>
-  <h1>BooksIndex</h1>
+  <div>
+    <h1>书籍</h1>
+    <article-list></article-list>
+  </div>
 </template>
 
 <script>

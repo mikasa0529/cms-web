@@ -1,5 +1,5 @@
 <template>
-  <h1>Spring</h1>
+      <article-list></article-list>
 </template>
 
 <script>

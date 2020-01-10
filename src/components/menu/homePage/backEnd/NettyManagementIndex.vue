@@ -1,5 +1,5 @@
 <template>
-  <h1>Netty</h1>
+      <article-list></article-list>
 </template>
 
 <script>

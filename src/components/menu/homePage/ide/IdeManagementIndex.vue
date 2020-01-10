@@ -1,5 +1,5 @@
 <template>
-    <H1>IDE</H1>
+        <article-list></article-list>
 </template>
 
 <script>

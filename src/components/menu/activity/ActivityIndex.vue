@@ -1,5 +1,8 @@
 <template>
-   <h1>ActivityIndex</h1>
+  <div>
+    <h1>活动</h1>
+    <article-list></article-list>
+  </div>
 </template>
 
 <script>

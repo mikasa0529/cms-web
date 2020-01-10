@@ -34,10 +34,10 @@
       cursor: pointer;
       a{
         text-decoration: none;
-        color: #3c9afb;
+        color: black;
       }
       a:hover{
-        color: greenyellow;
+        color: #3c9afb;
       }
     }
   }
