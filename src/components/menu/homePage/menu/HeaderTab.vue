@@ -1,6 +1,6 @@
 <template>
   <ul class="headerTabs">
-    <li v-for="item in tabData"  :key="item.id" class="tabItem">
+    <li v-for="item in tableData"  :key="item.id" class="tabItem">
       <router-link :to="item.functionUrl"  replace :exact="item.functionUrl === '/'">
         {{item.functionName}}
       </router-link>
@@ -17,8 +17,24 @@
     name: "HeaderTab",
     data() {
       return {
-        tabData:JSON.parse(JSON.stringify(functionData))
+        tableData: [] || JSON.parse(JSON.stringify(functionData)),
       }
+    },
+    created() {
+       this.pullData();
+    },
+    methods:{
+        pullData() {
+          this.$http.get("/pubFunction/find").then(res=>{
+            if(res.data.status === 'success') {
+              this.tableData = res.data.data;
+            }else {
+              this.$message(res.data.message);
+            }
+          }).catch(error=>{
+              this.$message.error("服务器出错，请联系管理员")
+          })
+        }
     }
   }
 </script>

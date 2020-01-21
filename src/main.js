@@ -14,7 +14,7 @@ Vue.use(ElemengUi);
 Vue.component("ArticleList",ArticleList);
 Vue.filter("dateFormat",dateFormat);
 Vue.config.productionTip = false;
-Vue.prototype.$test = axios.create({
+Vue.prototype.$http = axios.create({
   baseURL: process.env.BASE_URL,
   headers: {
     'Content-type': 'application/x-www-form-urlencoded'

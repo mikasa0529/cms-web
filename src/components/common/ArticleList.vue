@@ -24,9 +24,9 @@
         <div>
           <ul id="article-list-item-header">
             <li>专栏</li>
-            <li>{{item.author}}</li>
-            <li>{{item.createTime | dateFormat('dateWeek')}}</li>
-            <li>{{item.tag}}</li>
+            <li>{{item.author.userName}}</li>
+            <li>{{item.createTime | dateFormat('date')}}</li>
+            <li>{{item.pubFunction.functionName}}</li>
           </ul>
         </div>
         <div id="article-list-item-body">

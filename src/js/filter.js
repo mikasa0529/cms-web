@@ -1,9 +1,16 @@
 function dateFormat(val, type) {
   let days = Math.floor((new Date() - val) / (1000 * 60 * 60 * 24));
-  let year = val.getFullYear();
-  let month = val.getMonth() + 1;
-  let day = val.getDate();
-  let week = val.getDay();
+  let date = new Date(val);
+  let year = date.getFullYear();
+  let month = date.getMonth() + 1;
+  if(10>month) {
+    month ='0'+month;
+  }
+  let day = date.getUTCDate();
+   if(day<10) {
+    day = '0'+day;
+  }
+  let week = date.getDay();
   switch (week) {
     case 1:
       week = "一";
@@ -27,19 +34,21 @@ function dateFormat(val, type) {
       week = '日';
       break;
   }
-  let hour = val.getHours();
-  let minute = val.getMinutes();
-  let second = val.getSeconds();
+  let hour = date.getHours();
+  let minute = date.getMinutes();
+  let second = date.getSeconds();
   switch (type) {
     case "days":
       return days + "天前";
-    case "yyyy-MM-dd hh:mi:ss":
+    case "date":
+      return year + '-' + month + '-' + day;
+    case "dateTime":
       return year + '-' + month + '-' + day + " " + hour + ":" + minute + ":" + second;
-    case "c-yyyy-MM-dd hh:mi:ss":
+    case "cDateTime":
       return year + '年' + month + '月' + day + "日 " + hour + ":" + minute + ":" + second;
-    case 'c-yyyy-MM-dd':
+    case 'cDate':
       return year + '年' + month + '月' + day + "日";
-    case "c-yyyy-MM-dd-week":
+    case "cWeek":
       return year + '年' + month + '月' + day + "日 星期" + week;
     default:
       return year + '-' + month + '-' + day;
